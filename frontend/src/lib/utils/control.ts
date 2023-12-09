@@ -47,7 +47,7 @@ function init() {
 	scene = new THREE.Scene();
 
 	renderer = new CSS3DRenderer();
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setSize(window.innerWidth, window.innerHeight-69);
 	container?.appendChild(renderer.domElement);
 
 	const group = new THREE.Group();

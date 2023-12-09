@@ -120,7 +120,7 @@ function init() {
 		let a = mixer.clipAction(gltf.animations[0]);
 		// a.setLoop(THREE.LoopRepeat,1000);
 	  
-		a.setDuration(100).play();
+		a.setDuration(70).play();
 		mixers.push(mixer);
 	});
 
@@ -128,7 +128,7 @@ function init() {
 
 	renderer = new THREE.WebGLRenderer({ antialias: true });
 	renderer.setPixelRatio(window.devicePixelRatio);
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setSize(window.innerWidth, window.innerHeight-86);
 	container?.appendChild(renderer.domElement);
 	renderer.shadowMap.enabled = true;
 
@@ -158,16 +158,17 @@ function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
 
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setSize(window.innerWidth, window.innerHeight-69);
 }
 
 //
 
 function animate() {
 	requestAnimationFrame(animate);
-	mesh.rotation.z += 0.001;
+	
 	controls.update();
 	render();
+	mesh.rotation.z += 0.001;
 }
 
 function render() {

@@ -8,12 +8,20 @@
 	});
 </script>
 
-<Nav></Nav>
+<div class="main_div"> 
+    <Nav></Nav>
+    <div id="container"></div>
+    <div id="blocker"></div>
+</div>
 
-<div id="container"></div>
-<div id="blocker"></div>
+
+
 
 <style>
+    .main_div {
+        display: flex;  
+        flex-direction: column;
+    }
 	#container {
 		background-image: url('$lib/imgs/main_pic.png');
 		background-repeat: no-repeat;
