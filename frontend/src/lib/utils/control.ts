@@ -25,11 +25,11 @@ function Element(id: string, x: number, y: number, z: number, ry: number) {
 	if (id == 'a') {
 		iframe.src = ['http://localhost:5173/cube/main'].join('');
 	} else if (id == 'b') {
-		iframe.src = ['http://localhost:5173/cube/main'].join('');
+		iframe.src = ['http://localhost:5173/cube/explain2'].join('');
 	} else if (id == 'c') {
 		iframe.src = ['http://localhost:5173/cube/explain3'].join('');
 	} else if (id == 'd') {
-		iframe.src = ['https://www.youtube.com/embed/', id, '?rel=0'].join('');
+		iframe.src = ['https://www.youtube.com/embed/dQw4w9WgXcQ','?rel=0'].join('');
 	} else {
 		iframe.src = ['https://www.youtube.com/embed/', id, '?rel=0'].join('');
 	}
@@ -86,7 +86,7 @@ function init() {
 function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
 	camera.updateProjectionMatrix();
-	renderer.setSize(window.innerWidth, window.innerHeight);
+	renderer.setSize(window.innerWidth, window.innerHeight-69);
 }
 
 function animate() {

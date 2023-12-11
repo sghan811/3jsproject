@@ -38,16 +38,10 @@
 
 	<ul class="navbar__menu">
 		<li><div class="third" on:click={home}>Home</div></li>
-		<li><a href="/posts">comments</a></li>
         <li><div class="third" on:click={move}>3js</div></li>
 	</ul>
 
 	<ul class="navbar__icons">
-		{#if logedin == true}
-			<li><a href="" class="nav_button">ADD COMMENT</a></li>
-		{:else}
-			<li></li>
-		{/if}
 		{#if logedin == true}
 			<li><a href="" class="nav_button" on:click={out}>Logout</a></li> 
 		{:else}

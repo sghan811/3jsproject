@@ -3,6 +3,9 @@
     function car() {
         window.location.href = "3js/car"
     }
+    function text() {
+        window.location.href = "3js/text"
+    }
 </script>
 
 <Nav></Nav>
@@ -14,7 +17,7 @@
             <div class="car" on:click={car}></div>
         </div>
         <div class="second_content">
-            
+            <div class="text" on:click={text}></div>
         </div>
     </div>
     <div class="second_menu">
@@ -67,10 +70,20 @@
         background-color: whitesmoke;
     }
     .second_content{
+        display: flex;
         margin: auto auto;
         width: 40%;
         height: 80%;
         border-radius: 15px;
         background-color: whitesmoke;
+    }
+    .text {
+        margin: auto auto;
+        border-radius: 15px;
+        width: 80%;
+        height: 80%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url('$lib/imgs/3js/text.png');
     }
 </style>
