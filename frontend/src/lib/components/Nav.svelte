@@ -12,10 +12,12 @@
 	}
 	let logedin = false;
 	let name = '';
+	//handleLogOut
 	function out() {
 		logout();
 	}
 	onMount(async () => {
+		//isAuth
 		verify();
 		isLogedin.subscribe((data) => {
 			logedin = data;
@@ -47,7 +49,7 @@
 			<li></li>
 		{/if}
 		{#if logedin == true}
-			<li><a href="" class="nav_button" on:click={out}>Logout</a></li>
+			<li><a href="" class="nav_button" on:click={out}>Logout</a></li> 
 		{:else}
 			<li></li>
 		{/if}

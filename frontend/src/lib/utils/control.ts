@@ -19,6 +19,9 @@ function Element(id: string, x: number, y: number, z: number, ry: number) {
 	iframe.style.width = '600px';
 	iframe.style.height = '700px';
 	iframe.style.border = '0px';
+	//a b c d 
+	// if문 else if문 같은 경우에
+	// swtich case
 	if (id == 'a') {
 		iframe.src = ['http://localhost:5173/cube/main'].join('');
 	} else if (id == 'b') {
