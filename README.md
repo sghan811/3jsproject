@@ -18,7 +18,9 @@ typescript
 ///backend 구동 방법
 1. backend 폴더 내에 들어가서 npm i
 2. postgresql 콘솔을 열고 입력
+
 ///////////////////////////
+
 CREATE TABLE IF NOT EXISTS USERS (
     id SERIAL PRIMARY KEY,
     username VARCHAR(255) UNIQUE NOT NULL,
