@@ -34,14 +34,18 @@ CREATE TABLE IF NOT EXISTS COMMNETS (
     content VARCHAR(255) NOT NULL
 );
 /////////////////////////
+
+
 3. .env파일에 이 형식대로 작성
 /////////////////////////
+
+
 DB_USER={username_here}
 PASS={password_here}
 DB={database_here}
 DB_PORT={database_port_here}
 PORT={backend_port_here}
-4. 전부다 작성후, backend 폴더 내 콘솔에서 nodemon server.js
+5. 전부다 작성후, backend 폴더 내 콘솔에서 nodemon server.js
 
 
 
