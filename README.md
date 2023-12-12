@@ -45,8 +45,14 @@ PASS={password_here}
 DB={database_here}
 DB_PORT={database_port_here}
 PORT={backend_port_here}
+
+
 5. 전부다 작성후, backend 폴더 내 콘솔에서 nodemon server.js
 
+
+
+///backend 부가 설명
+1.다른 개발자가 사용하기 편하게 모듈화
 
 
 ///frontend 구동방법
