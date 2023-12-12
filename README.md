@@ -1,5 +1,7 @@
 # 3jsproject
 
+3js와 svelte로 기반으로한 3d 모델 구현 웹사이트
+
 backend:
 
 nodejs
