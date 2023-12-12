@@ -1,10 +1,10 @@
 <script>
 	import Nav from '../lib/components/Nav.svelte';
 	import { onMount } from 'svelte';
-	import { youtube } from '../lib/utils/control';
+	import { cube } from '../lib/utils/main_cube';
 
 	onMount(() => {
-		youtube();
+		cube();
 	});
 </script>
 

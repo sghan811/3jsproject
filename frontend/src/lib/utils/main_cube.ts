@@ -95,7 +95,7 @@ function animate() {
 	renderer.render(scene, camera);
 }
 
-export const youtube = () => {
+export const cube = () => {
 	init();
 	animate();
 };

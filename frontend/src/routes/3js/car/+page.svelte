@@ -1,7 +1,7 @@
 <script>
 	import Nav from '$lib/components/Nav.svelte';
 	import { onMount,onDestroy } from 'svelte';
-	import { car} from '$lib/utils/car';
+	import { car} from '$lib/utils/car_load';
 
 	onMount(() => {
 		car();
