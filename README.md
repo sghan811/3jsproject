@@ -52,9 +52,11 @@ PORT={backend_port_here}
 
 
 ///backend 부가 설명
+
 1.다른 개발자가 사용하기 편하게 모듈화
 
 
 ///frontend 구동방법
+
 1.frontend 폴더 내에 들어가서 npm i
 2.그후 npm run dev
